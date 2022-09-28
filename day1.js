@@ -5,6 +5,9 @@ AddRow()
 
 function AddRow(){
     let row = table_body.insertRow()
+
+    row.setAttribute('id' , 'tr'+table_body.rows.length)
+
     let col1 = row.insertCell()
     let col2 = row.insertCell()
     let col3 = row.insertCell()
@@ -18,13 +21,25 @@ function AddRow(){
     <input type="text" required placeholder="Enter Your Product Name" class="form-control">
     `
     col3.innerHTML = `
-    <input type="text" required placeholder="Enter Your Product Price" class="form-control">
+    <input type="text" required placeholder="Enter Your Product Price" class="form-control" id="price">
     `
     col4.innerHTML = `
-    <input type="text" required placeholder="Enter Your Product Quantity" class="form-control">
+    <input type="text" required placeholder="Enter Your Product Quantity" class="form-control" id="quantity">
     `
     col5.innerHTML = `
     <button onclick="deleteRow(${table_body.rows.length - 1})" class="btn btn-danger"><b>x</b></button>
     `
     console.log(table_body.rows.length)
 }
+
+function deleteRow(index){
+    let rowtodelete = document.querySelector(`tr${index}`);
+    table_body.removeChild(rowtodelete)
+};
+// function total(){
+//     let print = document.querySelector('#print');
+//     let price = document.querySelector('#price');
+//     let quantity = document.querySelector('#quantity');
+//     let total = parseInt(price)+parseInt(quantity);
+//    console.log( print.innerHTML.total)
+// }
