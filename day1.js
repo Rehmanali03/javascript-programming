@@ -21,20 +21,39 @@ function AddRow(){
     <input type="text" required placeholder="Enter Your Product Name" class="form-control">
     `
     col3.innerHTML = `
-    <input type="text" required placeholder="Enter Your Product Price" class="form-control" id="price">
+    <input type="text" required placeholder="Enter Your Product Price" class="form-control" id="price" name="price[]" onchange="calcprice();">
     `
     col4.innerHTML = `
-    <input type="text" required placeholder="Enter Your Product Quantity" class="form-control" id="quantity">
+    <input type="text" required placeholder="Enter Your Product Quantity" class="form-control" id="quantity" name="quantity[]" onchange="calcquantity()">
     `
     col5.innerHTML = `
-    <button onclick="deleteRow(${table_body.rows.length - 1})" class="btn btn-danger"><b>x</b></button>
+    <button onclick="deleteRow(${table_body.rows.length})" class="btn btn-danger"><b>x</b></button>
     `
     console.log(table_body.rows.length)
 }
 
+function calcprice(){
+    const input_price = document.getElementsByName("price[]");
+    let sum = 0;
+    for (let input of input_price){
+        sum += parseInt(input.value)
+    }
+      document.querySelector("#price").innerText = sum;
+}
+function calcquantity(){
+    const input_quantity = document.getElementsByName("quantity[]");
+    let sum = 0;
+    for (let input of input_quantity){
+        sum += parseInt(input.value)
+    }
+      document.querySelector("#Quantity").innerText = sum;
+}
+
 function deleteRow(index){
-    let rowtodelete = document.querySelector(`tr${index}`);
+    let rowtodelete = document.querySelector(`#tr${index}`);
+    console.log(rowtodelete)
     table_body.removeChild(rowtodelete)
+    calcprice()
 };
 // function total(){
 //     let print = document.querySelector('#print');
