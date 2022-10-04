@@ -55,10 +55,7 @@ function deleteRow(index){
     table_body.removeChild(rowtodelete)
     calcprice()
 };
-// function total(){
-//     let print = document.querySelector('#print');
-//     let price = document.querySelector('#price');
-//     let quantity = document.querySelector('#quantity');
-//     let total = parseInt(price)+parseInt(quantity);
-//    console.log( print.innerHTML.total)
-// }
+
+import { a, b, sum } from "./module.js";
+
+sum(2, 10)
