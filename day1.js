@@ -21,7 +21,7 @@ function AddRow(){
     <input type="text" required placeholder="Enter Your Product Name" class="form-control">
     `
     col3.innerHTML = `
-    <input type="text" required placeholder="Enter Your Product Price" class="form-control" id="price" name="price[]" onchange="calcprice();">
+    <input type="text" required placeholder="Enter Your Product Price" class="form-control" id="Price" name="price[]" onchange="calcprice();">
     `
     col4.innerHTML = `
     <input type="text" required placeholder="Enter Your Product Quantity" class="form-control" id="quantity" name="quantity[]" onchange="calcquantity()">
@@ -53,9 +53,15 @@ function deleteRow(index){
     let rowtodelete = document.querySelector(`#tr${index}`);
     console.log(rowtodelete)
     table_body.removeChild(rowtodelete)
+<<<<<<< HEAD
     calcprice()
 };
 
 import { a, b, sum } from "./module.js";
 
 sum(2, 10)
+=======
+    calcprice();
+    calcquantity();
+};
+>>>>>>> ad55c22c333d1c7de5364b4a6a7b0e2d2990a958
