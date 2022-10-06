@@ -57,11 +57,10 @@ function deleteRow(index){
     calcprice()
 };
 
-import { a, b, sum } from "./module.js";
+import { a, b, sum } from "module.js";
 
 sum(2, 10)
 =======
     calcprice();
     calcquantity();
 };
->>>>>>> ad55c22c333d1c7de5364b4a6a7b0e2d2990a958
