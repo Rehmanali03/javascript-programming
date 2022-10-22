@@ -3,10 +3,10 @@ console.log(table_body.rows.length)
 
 AddRow()
 
-function AddRow(){
+function AddRow() {
     let row = table_body.insertRow()
 
-    row.setAttribute('id' , 'tr'+table_body.rows.length)
+    row.setAttribute('id', 'tr' + table_body.rows.length)
 
     let col1 = row.insertCell()
     let col2 = row.insertCell()
@@ -32,35 +32,31 @@ function AddRow(){
     console.log(table_body.rows.length)
 }
 
-function calcprice(){
+function calcprice() {
     const input_price = document.getElementsByName("price[]");
     let sum = 0;
-    for (let input of input_price){
+    for (let input of input_price) {
         sum += parseInt(input.value)
     }
-      document.querySelector("#price").innerText = sum;
+    document.querySelector("#price").innerText = sum;
 }
-function calcquantity(){
+function calcquantity() {
     const input_quantity = document.getElementsByName("quantity[]");
     let sum = 0;
-    for (let input of input_quantity){
+    for (let input of input_quantity) {
         sum += parseInt(input.value)
     }
-      document.querySelector("#Quantity").innerText = sum;
+    document.querySelector("#Quantity").innerText = sum;
 }
 
-function deleteRow(index){
+function deleteRow(index) {
     let rowtodelete = document.querySelector(`#tr${index}`);
     console.log(rowtodelete)
     table_body.removeChild(rowtodelete)
-<<<<<<< HEAD
     calcprice()
 };
 
-import { a, b, sum } from "module.js";
+// import { a, b, sum } from "module.js";
 
-sum(2, 10)
-=======
-    calcprice();
-    calcquantity();
-};
+
+;
