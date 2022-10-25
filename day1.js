@@ -56,7 +56,7 @@ function deleteRow(index) {
     calcprice()
 };
 
-// import { a, b, sum } from "module.js";
+
 
 
 ;
