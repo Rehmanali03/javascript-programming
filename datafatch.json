@@ -1,0 +1,57 @@
+[
+    {
+        "id" : 1362252,
+        "Name" : "Rehman",
+        "Attendens" : "P",
+        "Days" : "TTS"
+    },
+    {
+        "id" : 1365432,
+        "Name" : "Wajahat",
+        "Attendens" : "P",
+        "Days" : "TTS"
+    },
+    {
+        "id" : 1363343,
+        "Name" : "Samia",
+        "Attendens" : "P",
+        "Days" : "TTS"
+    },
+    {
+        "id" : 1368765,
+        "Name" : "Shavron",
+        "Attendens" : "P",
+        "Days" : "TTS"
+    },
+    {
+        "id" : 1365543,
+        "Name" : "Aqeel",
+        "Attendens" : "P",
+        "Days" : "TTS"
+    },
+    {
+        "id" : 1365434,
+        "Name" : "Maaz",
+        "Attendens" : "A",
+        "Days" : "MWF"
+    },
+    {
+        "id" : 1363345,
+        "Name" : "MOiz",
+        "Attendens" : "A",
+        "Days" : "MWF"
+    },
+    {
+        "id" : 1368766,
+        "Name" : "Rizwan",
+        "Attendens" : "A",
+        "Days" : "MWF"
+    },
+    {
+        "id" : 1365547,
+        "Name" : "Qasim",
+        "Attendens" : "A",
+        "Days" : "MWF"
+    }
+
+]
